@@ -18,7 +18,7 @@ public class knapSack {
     Arrays.sort(ratio,Comparator.comparingDouble(o->o[1]));
     int val=capacity;
     int finalvalue=0;
-    for(int i=ratio.length;i>=0;i--){
+    for(int i=ratio.length-1;i>=0;i--){
      int indx=(int) ratio[i][0];
         if(val>=weight[indx]){
 finalvalue+=value[indx];
