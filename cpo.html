@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>capital fixation</h2
+        <div class="output">
+            <ul>
+
+            </ul>
+        </div>
+        <script >
+            const list=document.querySelector('.output');
+            list.innerHTML='';
+            let cities=['KolKAta','mUmnAi,DelhI','CheNNai'];
+for(let i=0;i<cities.length;i++){
+   let firstAlphabet= cities[i].slice(0,1);
+   let lowercase=cities[i].toLowerCase();
+   lowercase.replace(firstAlphabet,firstAlphabet.toUpperCase);
+   let listelement=document.createElement('li');
+   listelement.textContent=lowercase;
+   list.appendChild=(listelement);
+    
+
+}
+        </script>
+</body>
+</html>
